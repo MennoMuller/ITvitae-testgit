@@ -152,8 +152,6 @@ class MaelstromRoom extends Room {
         dungeon.addRoom(RoomType.MAELSTROM, mx, my);
         dungeon.addRoom(RoomType.EMPTY, x, y);
         player.displayRoom();
-
-
     }
 }
 
