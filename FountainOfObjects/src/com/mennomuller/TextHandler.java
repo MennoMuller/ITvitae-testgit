@@ -9,6 +9,7 @@ public class TextHandler {
     public static final String ANSI_BLUE = "\u001B[94m";
     public static final String ANSI_RED = "\u001B[91m";
     public static final String ANSI_GREEN = "\u001B[92m";
+    public static final String ANSI_GRAY = "\u001B[90m";
 
     public static String color(String text, Color color) {
         return switch (color) {
@@ -19,6 +20,7 @@ public class TextHandler {
             case MAGENTA -> ANSI_MAGENTA;
             case RED -> ANSI_RED;
             case GREEN -> ANSI_GREEN;
+            case GRAY -> ANSI_GRAY;
         } + text + ANSI_RESET;
     }
 }
@@ -30,5 +32,6 @@ enum Color {
     YELLOW,
     BLUE,
     RED,
-    GREEN
+    GREEN,
+    GRAY
 }

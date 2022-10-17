@@ -6,15 +6,18 @@ import java.util.Scanner;
 public class Player {
     Dungeon dungeon;
     Room currentLocation;
+    int arrows;
 
     public Player(Dungeon dungeon) {
         this.dungeon = dungeon;
         this.currentLocation = dungeon.entrance;
+        this.arrows = dungeon.size;
     }
 
     public void displayRoom() {
         System.out.println("-".repeat(82));
         ArrayList<String> hints = currentLocation.hints();
+        hints.add(1, TextHandler.color("You have " + arrows + (arrows == 1 ? " arrow." : " arrows."), Color.WHITE));
         boolean gameStillGoing = true;
         for (String line : hints) {
 
@@ -51,44 +54,110 @@ public class Player {
 
     public void executeCommand(Command command) {
         switch (command) {
-            case MOVE_EAST -> {
-                if (currentLocation.x < dungeon.size - 1) {
-                    currentLocation = dungeon.grid[currentLocation.x + 1][currentLocation.y];
-                } else {
-                    System.out.println(TextHandler.color("There is nothing to the east. You can't move any further.", Color.RED));
-                }
-            }
-            case MOVE_WEST -> {
-                if (currentLocation.x > 0) {
-                    currentLocation = dungeon.grid[currentLocation.x - 1][currentLocation.y];
-                } else {
-                    System.out.println(TextHandler.color("There is nothing to the west. You can't move any further.", Color.RED));
-                }
-            }
-            case MOVE_NORTH -> {
-                if (currentLocation.y < dungeon.size - 1) {
-                    currentLocation = dungeon.grid[currentLocation.x][currentLocation.y + 1];
-                } else {
-                    System.out.println(TextHandler.color("There is nothing to the north. You can't move any further.", Color.RED));
-                }
-            }
-            case MOVE_SOUTH -> {
-                if (currentLocation.y > 0) {
-                    currentLocation = dungeon.grid[currentLocation.x][currentLocation.y - 1];
-                } else {
-                    System.out.println(TextHandler.color("There is nothing to the south. You can't move any further.", Color.RED));
-                }
-            }
-            case ENABLE_FOUNTAIN -> {
-                if (currentLocation instanceof FountainRoom) {
-                    ((FountainRoom) currentLocation).activate();
-                } else {
-                    System.out.println(TextHandler.color("The Fountain of Objects is not here. Nothing happens.", Color.RED));
-                }
-            }
+            case MOVE_EAST -> moveEast();
+            case SHOOT_EAST -> shootEast();
+            case MOVE_WEST -> moveWest();
+            case SHOOT_WEST -> shootWest();
+            case MOVE_NORTH -> moveNorth();
+            case SHOOT_NORTH -> shootNorth();
+            case MOVE_SOUTH -> moveSouth();
+            case SHOOT_SOUTH -> shootSouth();
+            case ENABLE_FOUNTAIN -> enableFountain();
         }
 
         displayRoom();
+    }
+
+    private void moveNorth() {
+        if (currentLocation.y < dungeon.size - 1) {
+            currentLocation = dungeon.grid[currentLocation.x][currentLocation.y + 1];
+        } else {
+            System.out.println(TextHandler.color("There is nothing to the north. You can't move any further.", Color.RED));
+        }
+    }
+
+    private void moveEast() {
+        if (currentLocation.x < dungeon.size - 1) {
+            currentLocation = dungeon.grid[currentLocation.x + 1][currentLocation.y];
+        } else {
+            System.out.println(TextHandler.color("There is nothing to the east. You can't move any further.", Color.RED));
+        }
+    }
+
+    private void moveSouth() {
+        if (currentLocation.y > 0) {
+            currentLocation = dungeon.grid[currentLocation.x][currentLocation.y - 1];
+        } else {
+            System.out.println(TextHandler.color("There is nothing to the south. You can't move any further.", Color.RED));
+        }
+    }
+
+    private void moveWest() {
+        if (currentLocation.x > 0) {
+            currentLocation = dungeon.grid[currentLocation.x - 1][currentLocation.y];
+        } else {
+            System.out.println(TextHandler.color("There is nothing to the west. You can't move any further.", Color.RED));
+        }
+    }
+
+    private void enableFountain() {
+        if (currentLocation instanceof FountainRoom) {
+            ((FountainRoom) currentLocation).activate();
+        } else {
+            System.out.println(TextHandler.color("The Fountain of Objects is not here. Nothing happens.", Color.RED));
+        }
+    }
+
+    private void shootNorth() {
+        if (arrows > 0) {
+            if (currentLocation.y < dungeon.size - 1) {
+                dungeon.grid[currentLocation.x][currentLocation.y + 1].shoot();
+                arrows--;
+            } else {
+                System.out.println(TextHandler.color("There is nothing to the north. You can't shoot there.", Color.RED));
+            }
+        } else {
+            System.out.println(TextHandler.color("You're out of arrows.", Color.RED));
+        }
+    }
+
+    private void shootEast() {
+        if (arrows > 0) {
+            if (currentLocation.x < dungeon.size - 1) {
+                dungeon.grid[currentLocation.x + 1][currentLocation.y].shoot();
+                arrows--;
+            } else {
+                System.out.println(TextHandler.color("There is nothing to the east. You can't shoot there.", Color.RED));
+            }
+        } else {
+            System.out.println(TextHandler.color("You're out of arrows.", Color.RED));
+        }
+    }
+
+    private void shootSouth() {
+        if (arrows > 0) {
+            if (currentLocation.y > 0) {
+                dungeon.grid[currentLocation.x][currentLocation.y - 1].shoot();
+                arrows--;
+            } else {
+                System.out.println(TextHandler.color("There is nothing to the south. You can't shoot there.", Color.RED));
+            }
+        } else {
+            System.out.println(TextHandler.color("You're out of arrows.", Color.RED));
+        }
+    }
+
+    private void shootWest() {
+        if (arrows > 0) {
+            if (currentLocation.x > 0) {
+                dungeon.grid[currentLocation.x - 1][currentLocation.y].shoot();
+                arrows--;
+            } else {
+                System.out.println(TextHandler.color("There is nothing to the west. You can't shoot there.", Color.RED));
+            }
+        } else {
+            System.out.println(TextHandler.color("You're out of arrows.", Color.RED));
+        }
     }
 }
 
@@ -97,5 +166,9 @@ enum Command {
     MOVE_SOUTH,
     MOVE_EAST,
     MOVE_WEST,
-    ENABLE_FOUNTAIN
+    ENABLE_FOUNTAIN,
+    SHOOT_NORTH,
+    SHOOT_SOUTH,
+    SHOOT_EAST,
+    SHOOT_WEST
 }

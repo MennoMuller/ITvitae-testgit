@@ -13,7 +13,11 @@ public abstract class Room {
     }
 
     public String location() {
-        return TextHandler.color("You are in the room at (Row=" + y + ", Column=" + x + ")", Color.WHITE);
+        return TextHandler.color("You are in the room at (Row=" + y + ", Column=" + x + ").", Color.WHITE);
+    }
+
+    public void shoot() {
+        System.out.println(TextHandler.color("You hear the arrow clatter onto the stone floor.", Color.MAGENTA));
     }
 
     public ArrayList<String> hints() {
@@ -21,13 +25,16 @@ public abstract class Room {
         hints.add(location());
         boolean pitNear = false;
         boolean maelstromNear = false;
+        boolean amarokNear = false;
         for (int i = x - 1; i <= x + 1; i++) {
             for (int j = y - 1; j <= y + 1; j++) {
                 try {
                     if (dungeon.grid[i][j] instanceof PitRoom) {
                         pitNear = true;
-                    } else if (dungeon.grid[i][j] instanceof MaelstromRoom){
+                    } else if (dungeon.grid[i][j] instanceof MaelstromRoom) {
                         maelstromNear = true;
+                    } else if (dungeon.grid[i][j] instanceof AmarokRoom) {
+                        amarokNear = true;
                     }
                 } catch (ArrayIndexOutOfBoundsException ignored) {
                 }
@@ -38,6 +45,9 @@ public abstract class Room {
         }
         if (maelstromNear) {
             hints.add(TextHandler.color("You hear the growling and groaning of a maelstrom nearby.", Color.RED));
+        }
+        if (amarokNear) {
+            hints.add(TextHandler.color("You can smell the rotten stench of an amarok in a nearby room.", Color.RED));
         }
         return hints;
     }
@@ -126,6 +136,12 @@ class MaelstromRoom extends Room {
     }
 
     @Override
+    public void shoot() {
+        System.out.println(TextHandler.color("Hit! The arrow pierces the core of the maelstrom, and you hear it dissipate.", Color.MAGENTA));
+        dungeon.addRoom(RoomType.EMPTY, x, y);
+    }
+
+    @Override
     public ArrayList<String> hints() {
         ArrayList<String> hints = super.hints();
         hints.add(1, TextHandler.color("There's a maelstrom in this room! You are blown away to a different room.", Color.MAGENTA));
@@ -155,7 +171,28 @@ class MaelstromRoom extends Room {
     }
 }
 
+class AmarokRoom extends Room {
+
+    public AmarokRoom(int x, int y, Dungeon dungeon) {
+        super(x, y, dungeon);
+    }
+
+    @Override
+    public void shoot() {
+        System.out.println(TextHandler.color("Hit! You hear the amarok howl in pain as it dies.", Color.MAGENTA));
+        dungeon.addRoom(RoomType.EMPTY, x, y);
+    }
+
+    @Override
+    public ArrayList<String> hints() {
+        ArrayList<String> hints = super.hints();
+        hints.add(1, TextHandler.color("There's an amarok in this room! It tears you to shreds with its claws.", Color.MAGENTA));
+        hints.add(2, TextHandler.color("Game over.", Color.MAGENTA));
+        hints.add(3, "Stop");
+        return hints;
+    }
+}
 
 enum RoomType {
-    EMPTY, ENTRANCE, FOUNTAIN, PIT, MAELSTROM
+    EMPTY, ENTRANCE, FOUNTAIN, PIT, MAELSTROM, AMAROK
 }

@@ -43,14 +43,17 @@ class Dungeon {
             case SMALL -> {
                 addRoom(RoomType.PIT);
                 addRoom(RoomType.MAELSTROM);
+                addRoom(RoomType.AMAROK);
             }
             case MEDIUM -> {
                 addRooms(RoomType.PIT, 2);
                 addRoom(RoomType.MAELSTROM);
+                addRooms(RoomType.AMAROK, 2);
             }
             case LARGE -> {
                 addRooms(RoomType.PIT, 4);
                 addRooms(RoomType.MAELSTROM, 2);
+                addRooms(RoomType.AMAROK, 3);
             }
         }
     }
@@ -95,6 +98,7 @@ class Dungeon {
             case FOUNTAIN -> new FountainRoom(x, y, this);
             case PIT -> new PitRoom(x, y, this);
             case MAELSTROM -> new MaelstromRoom(x, y, this);
+            case AMAROK -> new AmarokRoom(x, y, this);
             default -> new EmptyRoom(x, y, this);
         };
         switch (type) {
