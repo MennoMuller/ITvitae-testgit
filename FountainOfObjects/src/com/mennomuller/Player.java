@@ -1,5 +1,7 @@
 package com.mennomuller;
 
+import java.time.Duration;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -7,6 +9,7 @@ public class Player {
     Dungeon dungeon;
     Room currentLocation;
     int arrows;
+    LocalDateTime startingTime;
 
     public Player(Dungeon dungeon) {
         this.dungeon = dungeon;
@@ -15,6 +18,7 @@ public class Player {
     }
 
     public void startGame() {
+        startingTime = LocalDateTime.now();
         System.out.println(TextHandler.color("\nYou enter the Cavern of Objects, a maze of rooms filled with dangerous pits in search of the Fountain of Objects.", Color.MAGENTA));
         System.out.println(TextHandler.color("Light is visible only in the entrance, and no other light is seen anywhere in the caverns.", Color.MAGENTA));
         System.out.println(TextHandler.color("You must navigate the Caverns with your other senses.", Color.MAGENTA));
@@ -24,6 +28,15 @@ public class Player {
         System.out.println(TextHandler.color("\nYou carry with you a bow and a quiver of arrows. You can use them to shoot monsters in the caverns but be warned: you have a limited supply.", Color.MAGENTA));
         System.out.println(TextHandler.color("\nFind the Fountain of Objects, activate it, and return to the entrance. ", Color.MAGENTA));
         displayRoom();
+        endGame();
+    }
+
+    private void endGame() {
+        LocalDateTime endingTime = LocalDateTime.now();
+        Duration playTime = Duration.between(startingTime, endingTime);
+        long seconds = playTime.getSeconds() % 60;
+        System.out.println("Elapsed time: " + playTime.toMinutes() + ":" + (seconds >= 10 ? seconds : "0" + seconds));
+
     }
 
     public void displayRoom() {
