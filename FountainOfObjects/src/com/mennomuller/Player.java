@@ -11,7 +11,7 @@ public class Player {
     public Player(Dungeon dungeon) {
         this.dungeon = dungeon;
         this.currentLocation = dungeon.entrance;
-        this.arrows = dungeon.size;
+        this.arrows = 5;
     }
 
     public void displayRoom() {
