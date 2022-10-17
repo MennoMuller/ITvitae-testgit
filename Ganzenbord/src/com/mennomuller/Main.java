@@ -93,6 +93,7 @@ class Dice {
 }
 
 class Goose {
+    private Color enumColor;
     private int position = 0;
     boolean skipTurn = false;
     boolean goingForward = true;
@@ -102,11 +103,11 @@ class Goose {
 
     @Override
     public String toString() {
-        return "<(" + (color.length() >= 3 ? color.substring(0, 3) : color + " ".repeat(3 - color.length())) + ")";
+        return TextHandler.color("<(" + (color.length() >= 3 ? color.substring(0, 3) : color + " ".repeat(3 - color.length())) + ")",enumColor);
     }
 
     public String getHead() {
-        return "  (O)>";
+        return TextHandler.color("  (O)>",enumColor);
     }
 
     //              (O)>  (O)>
@@ -118,6 +119,11 @@ class Goose {
 
     public Goose(String color) {
         this.color = color;
+        try {
+            enumColor = Color.valueOf(color.toUpperCase());
+        } catch (IllegalArgumentException e) {
+            enumColor = Color.WHITE;
+        }
     }
 
     private Game game;
@@ -176,7 +182,7 @@ class Space {
 
     @Override
     public String toString() {
-        return "[ " + (id < 10 ? "0" + id : id) + " ]";
+        return TextHandler.color("[ ",Color.YELLOW) + (id < 10 ? "0" + id : id) + TextHandler.color(" ]",Color.YELLOW);
     }
 
     public Goose getOccupant() {
@@ -317,13 +323,13 @@ class InnSpace extends Space {
 
     @Override
     public String toString() {
-        return "[|^^|]";
+        return TextHandler.color("[",Color.YELLOW)+TextHandler.color("|^^|",Color.RED)+TextHandler.color("]",Color.YELLOW);
     }
 
     @Override
     void landOn(Goose goose) {
         super.landOn(goose);
-        if(getOccupant().equals(goose)) {
+        if (getOccupant().equals(goose)) {
             System.out.println("The " + goose.getColor() + " goose is staying at the inn.");
             goose.skipTurn = true;
         }
@@ -348,8 +354,8 @@ class WellJailSpace extends Space {
     public String toString() {
         String s = "";
         switch (type) {
-            case JAIL -> s = "[[##]]";
-            case WELL -> s = "[(())]";
+            case JAIL -> s = TextHandler.color("[[##]]",Color.GRAY);
+            case WELL -> s = TextHandler.color("[(())]",Color.RED);
         }
         return s;
     }
@@ -357,7 +363,7 @@ class WellJailSpace extends Space {
     @Override
     void landOn(Goose goose) {
         super.landOn(goose);
-        if(getOccupant().equals(goose)) {
+        if (getOccupant().equals(goose)) {
             System.out.println("The " + goose.getColor() + " goose got stuck in " + message + ".");
             goose.stuck = true;
         }
@@ -384,9 +390,9 @@ class WarpSpace extends Space {
     public String toString() {
         String s = "";
         switch (type) {
-            case BRIDGE -> s = "[/--\\]";
-            case THORNY_BUSH -> s = "[&&&&]";
-            case DEATH -> s = "[(X)>]";
+            case BRIDGE -> s = TextHandler.color("[/--\\]",Color.BLUE);
+            case THORNY_BUSH -> s = TextHandler.color("[&&&&]",Color.GREEN);
+            case DEATH -> s = TextHandler.color("[(X)>]",Color.GRAY);
         }
         return s;
     }
@@ -411,7 +417,7 @@ class EndSpace extends StartSpace {
 
     @Override
     public String toString() {
-        return "[!!63!!]";
+        return TextHandler.color("[!!63!!]",Color.MAGENTA);
     }
 
     @Override
@@ -431,7 +437,7 @@ class StartSpace extends Space {
 
     @Override
     public String toString() {
-        return "Start>";
+        return TextHandler.color("Start>",Color.GREEN);
     }
 
     @Override
