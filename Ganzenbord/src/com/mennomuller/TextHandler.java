@@ -23,15 +23,16 @@ public class TextHandler {
             case GRAY -> ANSI_GRAY;
         } + text + ANSI_RESET;
     }
+
+    public enum Color {
+        MAGENTA,
+        WHITE,
+        CYAN,
+        YELLOW,
+        BLUE,
+        RED,
+        GREEN,
+        GRAY
+    }
 }
 
-enum Color {
-    MAGENTA,
-    WHITE,
-    CYAN,
-    YELLOW,
-    BLUE,
-    RED,
-    GREEN,
-    GRAY
-}
