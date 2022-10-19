@@ -16,6 +16,7 @@ public class Game {
     Scanner input = new Scanner(System.in);
     public Goose winner = null;
     public ArrayList<Goose> rankOrder = new ArrayList<>();
+    public int renderDistance = 13;
 
     public boolean getPlayersBefore(int pos) {
 
@@ -58,10 +59,9 @@ public class Game {
             for (Goose player : players) {
                 if ((singleWinner && winner == null) || !rankOrder.contains(player)) {
                     System.out.println("It's the " + player.getColor() + " goose's turn.");
-                    board.printBoard(player.getPosition(), 13);
+                    board.printBoard(player.getPosition(), renderDistance);
                     input.nextLine();
                     player.takeTurn();
-
                 }
             }
         } while (singleWinner && winner == null || rankOrder.size() < players.length);

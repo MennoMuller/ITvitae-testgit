@@ -12,54 +12,56 @@ public class Main {
 }
 
 class Dungeon {
-    private Size dungeonSize;
-    int size;
-    private long seed = 123456789L;
-    private Random random = new Random(seed);
-    Room[][] grid;
-    FountainRoom fountain;
-    EntranceRoom entrance;
+    private final Size size;
+    private final long seed = 123456789L;
+    private final Random random = new Random(seed);
+    private final Room[][] grid;
+    private FountainRoom fountain;
+    private EntranceRoom entrance;
 
     public Dungeon() {
         this(Dungeon.askSize());
     }
 
-    public Dungeon(Size dungeonSize) {
-        this.dungeonSize = dungeonSize;
-        size = switch (dungeonSize) {
-            case LARGE -> 8;
-            case MEDIUM -> 6;
-            case SMALL -> 4;
-        };
-        grid = new Room[size][size];
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < size; j++) {
+    public Dungeon(Size size) {
+        this.size = size;
+        grid = new Room[size.width][size.width];
+        for (int i = 0; i < size.width; i++) {
+            for (int j = 0; j < size.width; j++) {
                 grid[i][j] = new EmptyRoom(i, j, this);
             }
         }
         addRoom(RoomType.ENTRANCE, 0, 0);
-        addRoom(RoomType.FOUNTAIN, size / 2, 0);
-        switch (dungeonSize) {
-            case SMALL -> {
-                addRoom(RoomType.PIT);
-                addRoom(RoomType.MAELSTROM);
-                addRoom(RoomType.AMAROK);
-            }
-            case MEDIUM -> {
-                addRooms(RoomType.PIT, 2);
-                addRoom(RoomType.MAELSTROM);
-                addRooms(RoomType.AMAROK, 2);
-            }
-            case LARGE -> {
-                addRooms(RoomType.PIT, 4);
-                addRooms(RoomType.MAELSTROM, 2);
-                addRooms(RoomType.AMAROK, 3);
-            }
-        }
+        addRoom(RoomType.FOUNTAIN, size.width / 2, 0);
+        addRooms(RoomType.PIT, size.pits);
+        addRooms(RoomType.MAELSTROM, size.maelstroms);
+        addRooms(RoomType.AMAROK, size.amaroks);
+    }
+
+    public Room[][] getGrid() {
+        return grid;
+    }
+
+    public boolean fountainActive() {
+        return fountain.isActive();
+    }
+
+    public EntranceRoom getEntrance() {
+        return entrance;
     }
 
     enum Size {
-        SMALL, MEDIUM, LARGE
+        SMALL(4, 1, 1, 1),
+        MEDIUM(6, 2, 1, 2),
+        LARGE(8, 4, 2, 3);
+        final int width, pits, maelstroms, amaroks;
+
+        Size(int width, int pits, int maelstroms, int amaroks) {
+            this.width = width;
+            this.pits = pits;
+            this.maelstroms = maelstroms;
+            this.amaroks = amaroks;
+        }
     }
 
     public static Size askSize() {
@@ -68,10 +70,10 @@ class Dungeon {
         Size answer = null;
         do {
             try {
-                System.out.print(TextHandler.color("What size dungeon do you want? ", Color.CYAN));
+                System.out.print(TextHandler.color("What size dungeon do you want? ", TextHandler.Color.CYAN));
                 answer = Size.valueOf(input.nextLine().toUpperCase());
             } catch (IllegalArgumentException e) {
-                System.out.println(TextHandler.color("Invalid size.", Color.RED));
+                TextHandler.printlnColor("Invalid size.", TextHandler.Color.RED);
             }
         } while (answer == null);
         return answer;
@@ -86,8 +88,8 @@ class Dungeon {
     public void addRoom(RoomType type) {
         int x, y;
         do {
-            x = random.nextInt(size);
-            y = random.nextInt(size);
+            x = random.nextInt(size.width);
+            y = random.nextInt(size.width);
         } while (!(grid[x][y] instanceof EmptyRoom));
         addRoom(type, x, y);
     }
@@ -105,5 +107,13 @@ class Dungeon {
             case ENTRANCE -> entrance = (EntranceRoom) grid[x][y];
             case FOUNTAIN -> fountain = (FountainRoom) grid[x][y];
         }
+    }
+
+    public boolean isValidLocation(int x, int y) {
+        return x >= 0 && y >= 0 && x < size.width && y < size.width;
+    }
+
+    public Size getSize() {
+        return size;
     }
 }

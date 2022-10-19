@@ -1,6 +1,7 @@
 package com.mennomuller;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public abstract class Room {
     protected int x, y;
@@ -13,42 +14,32 @@ public abstract class Room {
     }
 
     public String location() {
-        return TextHandler.color("You are in the room at (Row=" + y + ", Column=" + x + ").", Color.WHITE);
+        return TextHandler.color("You are in the room at (Row=" + y + ", Column=" + x + ").", TextHandler.Color.WHITE);
     }
 
     public void shoot() {
-        System.out.println(TextHandler.color("You hear the arrow clatter onto the stone floor.", Color.MAGENTA));
+        TextHandler.printlnColor("You hear the arrow clatter onto the stone floor.", TextHandler.Color.MAGENTA);
     }
 
     public ArrayList<String> hints() {
         ArrayList<String> hints = new ArrayList<>();
         hints.add(location());
-        boolean pitNear = false;
-        boolean maelstromNear = false;
-        boolean amarokNear = false;
+        HashSet<String> warnings = new HashSet<>();
+
         for (int i = x - 1; i <= x + 1; i++) {
             for (int j = y - 1; j <= y + 1; j++) {
-                try {
-                    if (dungeon.grid[i][j] instanceof PitRoom) {
-                        pitNear = true;
-                    } else if (dungeon.grid[i][j] instanceof MaelstromRoom) {
-                        maelstromNear = true;
-                    } else if (dungeon.grid[i][j] instanceof AmarokRoom) {
-                        amarokNear = true;
+                if (dungeon.isValidLocation(i, j)) {
+                    if (dungeon.getGrid()[i][j] instanceof PitRoom) {
+                        warnings.add(TextHandler.color("You feel a draft. There is a pit in a nearby room.", TextHandler.Color.RED));
+                    } else if (dungeon.getGrid()[i][j] instanceof MaelstromRoom) {
+                        warnings.add(TextHandler.color("You hear the growling and groaning of a maelstrom nearby.", TextHandler.Color.RED));
+                    } else if (dungeon.getGrid()[i][j] instanceof AmarokRoom) {
+                        warnings.add(TextHandler.color("You can smell the rotten stench of an amarok in a nearby room.", TextHandler.Color.RED));
                     }
-                } catch (ArrayIndexOutOfBoundsException ignored) {
                 }
             }
         }
-        if (pitNear) {
-            hints.add(TextHandler.color("You feel a draft. There is a pit in a nearby room.", Color.RED));
-        }
-        if (maelstromNear) {
-            hints.add(TextHandler.color("You hear the growling and groaning of a maelstrom nearby.", Color.RED));
-        }
-        if (amarokNear) {
-            hints.add(TextHandler.color("You can smell the rotten stench of an amarok in a nearby room.", Color.RED));
-        }
+        hints.addAll(warnings);
         return hints;
     }
 }
@@ -73,9 +64,9 @@ class FountainRoom extends Room {
     public ArrayList<String> hints() {
         ArrayList<String> hints = super.hints();
         if (isActive) {
-            hints.add(1, TextHandler.color("You hear the rushing waters from the Fountain of Objects. It has been reactivated!", Color.BLUE));
+            hints.add(1, TextHandler.color("You hear the rushing waters from the Fountain of Objects. It has been reactivated!", TextHandler.Color.BLUE));
         } else {
-            hints.add(1, TextHandler.color("You hear water dripping in this room. The Fountain of Objects is here!", Color.BLUE));
+            hints.add(1, TextHandler.color("You hear water dripping in this room. The Fountain of Objects is here!", TextHandler.Color.BLUE));
         }
         return hints;
     }
@@ -90,12 +81,12 @@ class EntranceRoom extends Room {
     @Override
     public ArrayList<String> hints() {
         ArrayList<String> hints = super.hints();
-        if (dungeon.fountain.isActive()) {
-            hints.add(1, TextHandler.color("The Fountain of Objects has been reactivated, and you have escaped with your life!", Color.MAGENTA));
-            hints.add(2, TextHandler.color("You win!", Color.MAGENTA));
+        if (dungeon.fountainActive()) {
+            hints.add(1, TextHandler.color("The Fountain of Objects has been reactivated, and you have escaped with your life!", TextHandler.Color.MAGENTA));
+            hints.add(2, TextHandler.color("You win!", TextHandler.Color.MAGENTA));
             hints.add(3, "Stop");
         } else {
-            hints.add(1, TextHandler.color("You see light coming from the cavern entrance.", Color.YELLOW));
+            hints.add(1, TextHandler.color("You see light coming from the cavern entrance.", TextHandler.Color.YELLOW));
         }
         return hints;
     }
@@ -122,8 +113,8 @@ class PitRoom extends Room {
     @Override
     public ArrayList<String> hints() {
         ArrayList<String> hints = super.hints();
-        hints.add(1, TextHandler.color("There's a pit in this room! You fall into the pit and die.", Color.MAGENTA));
-        hints.add(2, TextHandler.color("Game over.", Color.MAGENTA));
+        hints.add(1, TextHandler.color("There's a pit in this room! You fall into the pit and die.", TextHandler.Color.MAGENTA));
+        hints.add(2, TextHandler.color("Game over.", TextHandler.Color.MAGENTA));
         hints.add(3, "Stop");
         return hints;
     }
@@ -137,33 +128,33 @@ class MaelstromRoom extends Room {
 
     @Override
     public void shoot() {
-        System.out.println(TextHandler.color("Hit! The arrow pierces the core of the maelstrom, and you hear it dissipate.", Color.MAGENTA));
+        TextHandler.printlnColor("Hit! The arrow pierces the core of the maelstrom, and you hear it dissipate.", TextHandler.Color.MAGENTA);
         dungeon.addRoom(RoomType.EMPTY, x, y);
     }
 
     @Override
     public ArrayList<String> hints() {
         ArrayList<String> hints = super.hints();
-        hints.add(1, TextHandler.color("There's a maelstrom in this room! You are blown away to a different room.", Color.MAGENTA));
+        hints.add(1, TextHandler.color("There's a maelstrom in this room! You are blown away to a different room.", TextHandler.Color.MAGENTA));
         hints.add(2, "Blow");
         return hints;
     }
 
     public void blowAway(Player player) {
-        int px = (x + 2) % dungeon.size;
-        int py = (y + 1) % dungeon.size;
-        player.currentLocation = dungeon.grid[px][py];
-        int mx = (x - 2 + dungeon.size) % dungeon.size;
-        int my = (y - 1 + dungeon.size) % dungeon.size;
+        int px = (x + 2) % dungeon.getSize().width;
+        int py = (y + 1) % dungeon.getSize().width;
+        player.currentLocation = dungeon.getGrid()[px][py];
+        int mx = (x - 2 + dungeon.getSize().width) % dungeon.getSize().width;
+        int my = (y - 1 + dungeon.getSize().width) % dungeon.getSize().width;
         search:
-        while (!(dungeon.grid[mx][my] instanceof EmptyRoom)) {
-            for (int i = 0; i < dungeon.size; i++) {
-                mx = (mx + 1) % dungeon.size;
-                if (dungeon.grid[mx][my] instanceof EmptyRoom) {
+        while (!(dungeon.getGrid()[mx][my] instanceof EmptyRoom)) {
+            for (int i = 0; i < dungeon.getSize().width; i++) {
+                mx = (mx + 1) % dungeon.getSize().width;
+                if (dungeon.getGrid()[mx][my] instanceof EmptyRoom) {
                     break search;
                 }
             }
-            my = (my + 1) % dungeon.size;
+            my = (my + 1) % dungeon.getSize().width;
         }
         dungeon.addRoom(RoomType.MAELSTROM, mx, my);
         dungeon.addRoom(RoomType.EMPTY, x, y);
@@ -179,15 +170,15 @@ class AmarokRoom extends Room {
 
     @Override
     public void shoot() {
-        System.out.println(TextHandler.color("Hit! You hear the amarok howl in pain as it dies.", Color.MAGENTA));
+        TextHandler.printlnColor("Hit! You hear the amarok howl in pain as it dies.", TextHandler.Color.MAGENTA);
         dungeon.addRoom(RoomType.EMPTY, x, y);
     }
 
     @Override
     public ArrayList<String> hints() {
         ArrayList<String> hints = super.hints();
-        hints.add(1, TextHandler.color("There's an amarok in this room! It tears you to shreds with its claws.", Color.MAGENTA));
-        hints.add(2, TextHandler.color("Game over.", Color.MAGENTA));
+        hints.add(1, TextHandler.color("There's an amarok in this room! It tears you to shreds with its claws.", TextHandler.Color.MAGENTA));
+        hints.add(2, TextHandler.color("Game over.", TextHandler.Color.MAGENTA));
         hints.add(3, "Stop");
         return hints;
     }
