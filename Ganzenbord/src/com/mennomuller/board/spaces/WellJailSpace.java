@@ -1,7 +1,7 @@
 package com.mennomuller.board.spaces;
 
-import com.mennomuller.TextHandler;
 import com.mennomuller.gamepieces.Goose;
+import com.mennomuller.util.TextHandler;
 
 public class WellJailSpace extends Space {
     String message;

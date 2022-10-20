@@ -1,7 +1,7 @@
 package com.mennomuller.gamepieces;
 
 import com.mennomuller.Game;
-import com.mennomuller.TextHandler;
+import com.mennomuller.util.TextHandler;
 
 public class Goose {
     private TextHandler.Color enumColor;

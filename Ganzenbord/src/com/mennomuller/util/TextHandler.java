@@ -1,4 +1,4 @@
-package com.mennomuller;
+package com.mennomuller.util;
 
 public class TextHandler {
     public static final String ANSI_RESET = "\u001B[0m";
@@ -12,27 +12,27 @@ public class TextHandler {
     public static final String ANSI_GRAY = "\u001B[90m";
 
     public static String color(String text, Color color) {
-        return switch (color) {
-            case BLUE -> ANSI_BLUE;
-            case CYAN -> ANSI_CYAN;
-            case WHITE -> ANSI_WHITE;
-            case YELLOW -> ANSI_YELLOW;
-            case MAGENTA -> ANSI_MAGENTA;
-            case RED -> ANSI_RED;
-            case GREEN -> ANSI_GREEN;
-            case GRAY -> ANSI_GRAY;
-        } + text + ANSI_RESET;
+        return color.ansiCode + text + ANSI_RESET;
+    }
+
+    public static void printlnColor(String text, Color color) {
+        System.out.println(color(text, color));
     }
 
     public enum Color {
-        MAGENTA,
-        WHITE,
-        CYAN,
-        YELLOW,
-        BLUE,
-        RED,
-        GREEN,
-        GRAY
+        MAGENTA(ANSI_MAGENTA),
+        WHITE(ANSI_WHITE),
+        CYAN(ANSI_CYAN),
+        YELLOW(ANSI_YELLOW),
+        BLUE(ANSI_BLUE),
+        RED(ANSI_RED),
+        GREEN(ANSI_GREEN),
+        GRAY(ANSI_GRAY);
+        public final String ansiCode;
+
+        Color(String ansiCode) {
+            this.ansiCode = ansiCode;
+        }
     }
 }
 

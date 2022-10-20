@@ -1,8 +1,8 @@
 package com.mennomuller.board.spaces;
 
 import com.mennomuller.Game;
-import com.mennomuller.TextHandler;
 import com.mennomuller.gamepieces.Goose;
+import com.mennomuller.util.TextHandler;
 
 import java.util.ArrayList;
 import java.util.List;
