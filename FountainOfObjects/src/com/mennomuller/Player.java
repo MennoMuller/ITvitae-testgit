@@ -1,16 +1,20 @@
 package com.mennomuller;
 
+import com.mennomuller.rooms.FountainRoom;
+import com.mennomuller.rooms.MaelstromRoom;
+import com.mennomuller.rooms.Room;
+import com.mennomuller.util.TextHandler;
+
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Player {
-    final int separatorWidth = 82;
-    Dungeon dungeon;
-    Room currentLocation;
-    int arrows;
-    LocalDateTime startingTime;
+    private final Dungeon dungeon;
+    private Room currentLocation;
+    private int arrows;
+    private LocalDateTime startingTime;
 
     public Player(Dungeon dungeon) {
         this.dungeon = dungeon;
@@ -18,8 +22,18 @@ public class Player {
         this.arrows = 5;
     }
 
+    public void setCurrentLocation(Room currentLocation) {
+        this.currentLocation = currentLocation;
+    }
+
     public void startGame() {
         startingTime = LocalDateTime.now();
+        displayManual();
+        displayRoom();
+        endGame();
+    }
+
+    private void displayManual() {
         System.out.print(TextHandler.ANSI_MAGENTA);
         System.out.println("\nYou enter the Cavern of Objects, a maze of rooms filled with dangerous pits in search of the Fountain of Objects.");
         System.out.println("Light is visible only in the entrance, and no other light is seen anywhere in the caverns.");
@@ -30,8 +44,6 @@ public class Player {
         System.out.println("\nYou carry with you a bow and a quiver of arrows. You can use them to shoot monsters in the caverns but be warned: you have a limited supply.");
         System.out.println("\nFind the Fountain of Objects, activate it, and return to the entrance. ");
         System.out.print(TextHandler.ANSI_RESET);
-        displayRoom();
-        endGame();
     }
 
     private void endGame() {
@@ -43,12 +55,13 @@ public class Player {
     }
 
     public void displayRoom() {
+        int separatorWidth = 82;
         System.out.println("-".repeat(separatorWidth));
         ArrayList<String> hints = currentLocation.hints();
-        hints.add(1, TextHandler.color("You have " + (arrows == 0 ? "no" : arrows) + (arrows == 1 ? " arrow." : " arrows."), TextHandler.Color.WHITE));
+        hints.add(1, TextHandler.color("You have " + (arrows == 0 ? "no" : arrows) +
+                (arrows == 1 ? " arrow." : " arrows."), TextHandler.Color.WHITE));
         boolean gameStillGoing = true;
         for (String line : hints) {
-
             if (line.equals("Stop")) {
                 gameStillGoing = false;
                 break;
@@ -56,7 +69,6 @@ public class Player {
                 gameStillGoing = false;
                 ((MaelstromRoom) currentLocation).blowAway(this);
                 break;
-
             }
             System.out.println(line);
         }
@@ -97,8 +109,8 @@ public class Player {
     }
 
     private void move(Direction d) {
-        int newX = currentLocation.x + d.dx;
-        int newY = currentLocation.y + d.dy;
+        int newX = currentLocation.getX() + d.dx;
+        int newY = currentLocation.getY() + d.dy;
         if (dungeon.isValidLocation(newX, newY)) {
             currentLocation = dungeon.getGrid()[newX][newY];
         } else {
@@ -117,8 +129,8 @@ public class Player {
 
     private void shoot(Direction d) {
         if (arrows > 0) {
-            int targetX = currentLocation.x + d.dx;
-            int targetY = currentLocation.y + d.dy;
+            int targetX = currentLocation.getX() + d.dx;
+            int targetY = currentLocation.getY() + d.dy;
             if (dungeon.isValidLocation(targetX, targetY)) {
                 dungeon.getGrid()[targetX][targetY].shoot();
                 arrows--;
@@ -146,7 +158,7 @@ public class Player {
         System.out.println("Commands are not case sensitive.");
     }
 
-    enum Direction {
+    public enum Direction {
         NORTH(0, 1),
         SOUTH(0, -1),
         EAST(1, 0),
@@ -158,18 +170,19 @@ public class Player {
             this.dy = dy;
         }
     }
+
+    public enum Command {
+        HELP,
+        MOVE_NORTH,
+        MOVE_SOUTH,
+        MOVE_EAST,
+        MOVE_WEST,
+        ENABLE_FOUNTAIN,
+        SHOOT_NORTH,
+        SHOOT_SOUTH,
+        SHOOT_EAST,
+        SHOOT_WEST
+    }
 }
 
 
-enum Command {
-    HELP,
-    MOVE_NORTH,
-    MOVE_SOUTH,
-    MOVE_EAST,
-    MOVE_WEST,
-    ENABLE_FOUNTAIN,
-    SHOOT_NORTH,
-    SHOOT_SOUTH,
-    SHOOT_EAST,
-    SHOOT_WEST
-}
