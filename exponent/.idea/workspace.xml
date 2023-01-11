@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8938359c-fba6-4e49-91b4-ad8a2f04bb99" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Calculator/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculator/out/production/Calculator/MainClass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Eindopdracht1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Eindopdracht1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Eindopdracht1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Eindopdracht1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Eindopdracht1/out/production/Eindopdracht1/personen/Leerling.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Eindopdracht1/out/production/Eindopdracht1/school/Klas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Eindopdracht1/src/personen/Leerling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Eindopdracht1/src/school/Klas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/.gradle/7.1.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/.gradle/7.1.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/.gradle/7.1.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/InputOpgaveC.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/build/classes/java/main/nl/itvitae/huidigjavaniveautest/BaseTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/build/classes/java/main/nl/itvitae/huidigjavaniveautest/Flower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/build/classes/java/main/nl/itvitae/huidigjavaniveautest/GuessingGame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/build/classes/java/main/nl/itvitae/huidigjavaniveautest/OpgaveC.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/build/classes/java/main/nl/itvitae/huidigjavaniveautest/OpgavenA$Car.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/build/classes/java/main/nl/itvitae/huidigjavaniveautest/OpgavenA.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/build/classes/java/main/nl/itvitae/huidigjavaniveautest/ProgrammingCoach.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/build/classes/java/main/nl/itvitae/huidigjavaniveautest/TestA.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/build/classes/java/main/nl/itvitae/huidigjavaniveautest/TestB.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/build/classes/java/main/nl/itvitae/huidigjavaniveautest/TestC.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/build/classes/java/main/nl/itvitae/huidigjavaniveautest/utils/NotYetImplementedException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/src/main/java/nl/itvitae/huidigjavaniveautest/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/src/main/java/nl/itvitae/huidigjavaniveautest/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/src/main/java/nl/itvitae/huidigjavaniveautest/OpgaveC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/src/main/java/nl/itvitae/huidigjavaniveautest/OpgavenA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/src/main/java/nl/itvitae/huidigjavaniveautest/OpgavenB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/src/main/java/nl/itvitae/huidigjavaniveautest/TestA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/src/main/java/nl/itvitae/huidigjavaniveautest/TestB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/src/main/java/nl/itvitae/huidigjavaniveautest/TestC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HuidigNiveauTestJava7sep2022/src/main/java/nl/itvitae/huidigjavaniveautest/utils/NotYetImplementedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.gradle/7.1.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.gradle/7.1.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.gradle/7.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.gradle/7.1.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.idea/externalDependencies.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/1.5 Boolean Logic/src/BooleanLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/1.5 Boolean Logic/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/1.5 Boolean Logic/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/1.5 Boolean Logic/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/1.6 Boolean Calculator/src/BooleanCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/1.6 Boolean Calculator/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/1.6 Boolean Calculator/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/1.6 Boolean Calculator/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/Boolean Operators/build/classes/java/main/BooleanOperators.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/Boolean Operators/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/Boolean Operators/src/BooleanOperators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/Boolean Operators/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/Boolean Operators/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/Boolean Operators/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/Comparison Operators/build/classes/java/main/ComparisonOperators.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/Comparison Operators/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/Comparison Operators/src/ComparisonOperators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/Comparison Operators/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/Comparison Operators/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/Comparison Operators/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/Shortcut Operators/build/classes/java/main/ShortcutOperators.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/Shortcut Operators/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/Shortcut Operators/src/ShortcutOperators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/Shortcut Operators/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/Shortcut Operators/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/Shortcut Operators/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Operators/lesson-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/1.1 Class syntax/src/ClassSyntax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/1.1 Class syntax/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/1.1 Class syntax/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/1.1 Class syntax/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/1.2 Say Hello/build/classes/java/main/SayHello.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/1.2 Say Hello/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/1.2 Say Hello/out/production/classes/SayHello.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/1.2 Say Hello/src/SayHello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/1.2 Say Hello/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/1.2 Say Hello/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/1.2 Say Hello/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/1.2 Say Hello/test/latest_output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/1.2 Say Hello/test/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/Classes in Java/build/classes/java/main/ClassesInJava.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/Classes in Java/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/Classes in Java/src/ClassesInJava.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/Classes in Java/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/Classes in Java/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/Classes in Java/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/Printing Statements/out/production/classes/PrintingStatements.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/Printing Statements/src/PrintingStatements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/Printing Statements/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/Printing Statements/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/Printing Statements/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Structure/lesson-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/1.3 Cafe Receipt/build/classes/java/main/CafeReceipt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/1.3 Cafe Receipt/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/1.3 Cafe Receipt/out/production/classes/CafeReceipt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/1.3 Cafe Receipt/src/CafeReceipt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/1.3 Cafe Receipt/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/1.3 Cafe Receipt/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/1.3 Cafe Receipt/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/1.3 Cafe Receipt/test/latest_output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/1.3 Cafe Receipt/test/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/1.4 Speed Calculator/src/SpeedCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/1.4 Speed Calculator/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/1.4 Speed Calculator/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/1.4 Speed Calculator/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/Changing Values/build/classes/java/main/ChangingValues.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/Changing Values/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/Changing Values/src/ChangingValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/Changing Values/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/Changing Values/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/Changing Values/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/Integer Division and Type Casting/build/classes/java/main/IntegerDivisionAndTypeCasting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/Integer Division and Type Casting/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/Integer Division and Type Casting/src/IntegerDivisionAndTypeCasting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/Integer Division and Type Casting/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/Integer Division and Type Casting/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/Integer Division and Type Casting/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/Storing Values/build/classes/java/main/StoringValues.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/Storing Values/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/Storing Values/src/StoringValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/Storing Values/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/Storing Values/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/Storing Values/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/Variables/lesson-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/section-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/1. Fundamentals/section-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/2.1 Client Points/build/classes/java/main/ClientPoints.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/2.1 Client Points/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/2.1 Client Points/out/production/classes/ClientPoints.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/2.1 Client Points/src/ClientPoints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/2.1 Client Points/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/2.1 Client Points/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/2.1 Client Points/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/2.1 Client Points/test/latest_output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/2.1 Client Points/test/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/2.2 Roller Coaster/build/classes/java/main/RollerCoaster.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/2.2 Roller Coaster/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/2.2 Roller Coaster/src/RollerCoaster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/2.2 Roller Coaster/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/2.2 Roller Coaster/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/2.2 Roller Coaster/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/2.2 Roller Coaster/test/latest_output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/2.2 Roller Coaster/test/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/2.3 Smart Room/src/SmartRoom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/2.3 Smart Room/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/2.3 Smart Room/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/2.3 Smart Room/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/Conditionals/build/classes/java/main/Conditionals.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/Conditionals/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/Conditionals/src/Conditionals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/Conditionals/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/Conditionals/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/Conditionals/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/Nesting Conditionals/build/classes/java/main/NestingConditionals.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/Nesting Conditionals/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/Nesting Conditionals/src/NestingConditionals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/Nesting Conditionals/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/Nesting Conditionals/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/Nesting Conditionals/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/The else Clause/build/classes/java/main/TheElseClause.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/The else Clause/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/The else Clause/src/TheElseClause.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/The else Clause/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/The else Clause/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/The else Clause/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Conditionals/lesson-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/2.4 Odd Selector/src/OddSelector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/2.4 Odd Selector/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/2.4 Odd Selector/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/2.4 Odd Selector/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/2.5 While Using Modulus/src/WhileUsingModulus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/2.5 While Using Modulus/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/2.5 While Using Modulus/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/2.5 While Using Modulus/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/2.6 Breaking The Ice/src/BreakingTheIce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/2.6 Breaking The Ice/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/2.6 Breaking The Ice/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/2.6 Breaking The Ice/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/2.7 Hundredth Prime/build/classes/java/main/HundredthPrime.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/2.7 Hundredth Prime/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/2.7 Hundredth Prime/out/production/classes/HundredthPrime.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/2.7 Hundredth Prime/src/HundredthPrime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/2.7 Hundredth Prime/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/2.7 Hundredth Prime/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/2.7 Hundredth Prime/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/2.7 Hundredth Prime/test/latest_output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/2.7 Hundredth Prime/test/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/Nesting Loops and Conditionals/build/classes/java/main/NestingLoopsAndConditionals.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/Nesting Loops and Conditionals/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/Nesting Loops and Conditionals/src/NestingLoopsAndConditionals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/Nesting Loops and Conditionals/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/Nesting Loops and Conditionals/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/Nesting Loops and Conditionals/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/The for Loop/build/classes/java/main/TheForLoop.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/The for Loop/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/The for Loop/src/TheForLoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/The for Loop/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/The for Loop/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/The for Loop/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/The while Loop/build/classes/java/main/TheWhileLoop.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/The while Loop/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/The while Loop/src/TheWhileLoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/The while Loop/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/The while Loop/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/The while Loop/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/break and continue/build/classes/java/main/BreakAndContinue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/break and continue/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/break and continue/src/BreakAndContinue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/break and continue/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/break and continue/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/break and continue/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/Loops/lesson-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/section-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/2. Flow Control/section-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.4 Estimate Age/build/classes/java/main/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.4 Estimate Age/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.4 Estimate Age/src/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.4 Estimate Age/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.4 Estimate Age/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.4 Estimate Age/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.4 Estimate Age/test/latest_output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.4 Estimate Age/test/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.5 Make it A Combo/build/classes/java/main/Meal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.5 Make it A Combo/build/classes/java/test/MealTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.5 Make it A Combo/build/reports/tests/test/classes/MealTests.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.5 Make it A Combo/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.5 Make it A Combo/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.5 Make it A Combo/build/reports/tests/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.5 Make it A Combo/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.5 Make it A Combo/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.5 Make it A Combo/build/test-results/test/TEST-MealTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.5 Make it A Combo/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.5 Make it A Combo/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.5 Make it A Combo/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.5 Make it A Combo/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.5 Make it A Combo/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.5 Make it A Combo/src/Meal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.5 Make it A Combo/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.5 Make it A Combo/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.5 Make it A Combo/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.5 Make it A Combo/test/MealTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.6 Counting Sheep/build/classes/java/main/Sheep.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.6 Counting Sheep/build/classes/java/test/SheepTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.6 Counting Sheep/build/reports/tests/test/classes/SheepTests.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.6 Counting Sheep/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.6 Counting Sheep/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.6 Counting Sheep/build/reports/tests/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.6 Counting Sheep/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.6 Counting Sheep/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.6 Counting Sheep/build/test-results/test/TEST-SheepTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.6 Counting Sheep/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.6 Counting Sheep/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.6 Counting Sheep/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.6 Counting Sheep/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.6 Counting Sheep/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.6 Counting Sheep/src/Sheep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.6 Counting Sheep/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.6 Counting Sheep/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.6 Counting Sheep/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/3.6 Counting Sheep/test/SheepTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/Returning Values/src/ReturningValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/Returning Values/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/Returning Values/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/Returning Values/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/Static Attributes/build/classes/java/main/StaticAttributes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/Static Attributes/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/Static Attributes/src/StaticAttributes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/Static Attributes/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/Static Attributes/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/Static Attributes/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/Void Methods/build/classes/java/main/VoidMethods.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/Void Methods/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/Void Methods/src/VoidMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/Void Methods/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/Void Methods/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/Void Methods/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Methods/lesson-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/3.1 Make a Thing/src/Thing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/3.1 Make a Thing/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/3.1 Make a Thing/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/3.1 Make a Thing/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/3.2 Shoe Maker/build/classes/java/main/Shoes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/3.2 Shoe Maker/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/3.2 Shoe Maker/src/Shoes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/3.2 Shoe Maker/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/3.2 Shoe Maker/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/3.2 Shoe Maker/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/3.2 Shoe Maker/test/latest_output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/3.2 Shoe Maker/test/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/3.3 Car Factory/src/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/3.3 Car Factory/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/3.3 Car Factory/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/3.3 Car Factory/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/Attributes/build/classes/java/main/Attributes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/Attributes/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/Attributes/src/Attributes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/Attributes/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/Attributes/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/Attributes/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/Constructors/build/classes/java/main/Constructors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/Constructors/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/Constructors/src/Constructors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/Constructors/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/Constructors/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/Constructors/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/Objects/build/classes/java/main/Objects.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/Objects/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/Objects/src/Objects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/Objects/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/Objects/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/Objects/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/Objects/lesson-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/section-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/3. Objects and Methods/section-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.3 Get Letter List/build/classes/java/main/LettersList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.3 Get Letter List/build/classes/java/test/LettersTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.3 Get Letter List/build/reports/tests/test/classes/LettersTests.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.3 Get Letter List/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.3 Get Letter List/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.3 Get Letter List/build/reports/tests/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.3 Get Letter List/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.3 Get Letter List/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.3 Get Letter List/build/test-results/test/TEST-LettersTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.3 Get Letter List/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.3 Get Letter List/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.3 Get Letter List/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.3 Get Letter List/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.3 Get Letter List/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.3 Get Letter List/src/LettersList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.3 Get Letter List/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.3 Get Letter List/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.3 Get Letter List/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.3 Get Letter List/test/LettersTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.4 Counting Error/src/CountingError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.4 Counting Error/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.4 Counting Error/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/4.4 Counting Error/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/Arrays/build/classes/java/main/Arrays.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/Arrays/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/Arrays/src/Arrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/Arrays/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/Arrays/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/Arrays/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/The Enhanced for Loop/build/classes/java/main/EnhancedForLoop.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/The Enhanced for Loop/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/The Enhanced for Loop/src/EnhancedForLoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/The Enhanced for Loop/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/The Enhanced for Loop/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/The Enhanced for Loop/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/Arrays/lesson-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.1 Get Shortest Word/build/classes/java/main/GetShortestWord.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.1 Get Shortest Word/build/classes/java/test/ShortestTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.1 Get Shortest Word/build/reports/tests/test/classes/ShortestTests.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.1 Get Shortest Word/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.1 Get Shortest Word/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.1 Get Shortest Word/build/reports/tests/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.1 Get Shortest Word/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.1 Get Shortest Word/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.1 Get Shortest Word/build/test-results/test/TEST-ShortestTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.1 Get Shortest Word/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.1 Get Shortest Word/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.1 Get Shortest Word/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.1 Get Shortest Word/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.1 Get Shortest Word/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.1 Get Shortest Word/src/GetShortestWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.1 Get Shortest Word/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.1 Get Shortest Word/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.1 Get Shortest Word/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.1 Get Shortest Word/test/ShortestTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.2 Word Cutter/build/classes/java/main/WordCutter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.2 Word Cutter/build/classes/java/test/WordCutterTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.2 Word Cutter/build/reports/tests/test/classes/WordCutterTests.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.2 Word Cutter/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.2 Word Cutter/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.2 Word Cutter/build/reports/tests/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.2 Word Cutter/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.2 Word Cutter/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.2 Word Cutter/build/test-results/test/TEST-WordCutterTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.2 Word Cutter/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.2 Word Cutter/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.2 Word Cutter/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.2 Word Cutter/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.2 Word Cutter/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.2 Word Cutter/src/WordCutter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.2 Word Cutter/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.2 Word Cutter/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.2 Word Cutter/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/4.2 Word Cutter/test/WordCutterTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/String Length/build/classes/java/main/Length.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/String Length/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/String Length/src/Length.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/String Length/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/String Length/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/String Length/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/Substrings/build/classes/java/main/Substrings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/Substrings/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/Substrings/src/Substrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/Substrings/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/Substrings/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/Substrings/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/String Methods/lesson-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/section-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/4. Arrays and String Methods/section-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/course-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/course-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/java_pid4008.hprof" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java for beginners/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Phoneshop/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Phoneshop/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Phoneshop/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Phoneshop/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Phoneshop/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Phoneshop/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Phoneshop/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Phoneshop/src/com/mennomuller/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Phoneshop/src/com/mennomuller/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/Gui$MouseClass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/GuiOld4$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/GuiOld4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/GuiOld5$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/GuiOld5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/GuiOld6$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/GuiOld6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/GuiOld7$HandlerClass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/GuiOld7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/Layout$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/Layout$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/Layout$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/Layout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/Peach.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/PeachOld.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/PeachOld2$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/PeachOld2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/createFile.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/part70.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/part72.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/part74.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/part77.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/part78.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/part79.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/part80.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/part81.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/part82.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/part83.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/part84.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/part85.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/part86.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/part87.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bucky/out/production/bucky/readFile.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/exponent/com/mennomuller/OddEvenTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratchpad-itv/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratchpad-itv/.idea/dictionaries/menno.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratchpad-itv/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratchpad-itv/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratchpad-itv/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratchpad-itv/out/production/scratchpad-itv/Certificering/Examenvraag.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratchpad-itv/out/production/scratchpad-itv/Universiteit/Examen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratchpad-itv/out/production/scratchpad-itv/mennomuller/Hello.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratchpad-itv/out/production/scratchpad-itv/opdrachteen/com/cert/Opdracht_1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratchpad-itv/src/Certificering/Examenvraag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratchpad-itv/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratchpad-itv/src/Universiteit/Examen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratchpad-itv/src/mennomuller/Hello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratchpad-itv/src/opdrachteen/com/cert/Opdracht_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eindopdracht2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Eindopdracht2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eindopdracht3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Eindopdracht3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EytT2BxtLyHVdEg9cdFPFdTHbp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.mennomuller.Main" />
+      <module name="exponent" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8938359c-fba6-4e49-91b4-ad8a2f04bb99" name="Changes" comment="" />
+      <created>1663579660838</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663579660838</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
